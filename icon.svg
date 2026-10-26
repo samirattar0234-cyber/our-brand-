@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#332632"/>
+  <path d="M108 155h296l-25 280H133z" fill="#b66d78"/>
+  <path d="M190 185v-35a66 66 0 0 1 132 0v35" fill="none" stroke="#fcfaf8" stroke-linecap="round" stroke-width="24"/>
+  <text x="256" y="335" fill="#fff" font-family="Georgia,serif" font-size="92" font-weight="700" text-anchor="middle">OB</text>
+</svg>
