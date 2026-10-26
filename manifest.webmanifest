@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "OUR BRAND Clothing",
+  "short_name": "OUR BRAND",
+  "description": "Shop clothes for women, men, and kids at OUR BRAND.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fcfaf8",
+  "theme_color": "#412d3a",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

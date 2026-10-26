@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#412d3a" />
+    <meta name="description" content="Shop everyday fashion at OUR BRAND: clothing for women, men, and kids." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="OUR BRAND" />
+    <title>OUR BRAND | Fashion for Everyone</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="clothing.css" />
+  </head>
+  <body>
+    <section class="welcome-screen" id="welcome-screen" role="status" aria-live="polite" aria-label="Welcome to OUR BRAND">
+      <div class="welcome-content">
+        <div class="welcome-emblem" aria-hidden="true">
+          <span class="emblem-orbit emblem-orbit-one"></span>
+          <span class="emblem-orbit emblem-orbit-two"></span>
+          <svg class="welcome-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 21c0-5 4-9 9-9 4 0 7 3 7 7 0 3-2 5-5 7l-8 6" />
+            <path d="m50 32-34 24c-3 2-2 6 2 6h64c4 0 5-4 2-6L50 32Z" />
+            <path d="M29 64v19c0 4 3 7 7 7h28c4 0 7-3 7-7V64" />
+            <path d="M39 76h22" />
+            <path class="welcome-icon-sparkle" d="m78 23 2.5 6.5L87 32l-6.5 2.5L78 41l-2.5-6.5L69 32l6.5-2.5L78 23Z" />
+          </svg>
+        </div>
+        <p class="welcome-kicker">A little more you, in every detail</p>
+        <p class="welcome-wordmark">OUR <span>BRAND</span></p>
+        <p class="welcome-caption">Discover a new kind of everyday.</p>
+        <div class="welcome-progress" aria-hidden="true"><span></span></div>
+        <button class="welcome-skip" id="welcome-skip" type="button">Skip intro</button>
+      </div>
+    </section>
+
+    <div class="top-bar">
+      <span>Wear what feels like you.</span>
+      <button type="button" class="top-app-link" id="top-app-link">SAVE ON MORE APP</button>
+      <a href="sell-on-our-brand.html">SELL ON OUR BRAND</a>
+      <a href="help-center.html">HELP &amp; SUPPORT</a>
+    </div>
+
+    <header class="header">
+      <a href="#home" class="logo" aria-label="OUR BRAND home">OUR <span>BRAND</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home" class="active" aria-current="page">Home</a>
+        <a href="#departments">Departments</a>
+        <a href="#products">Shop clothes</a>
+        <a href="login/index.html">Sign in</a>
+      </nav>
+      <form class="search-box" role="search">
+        <input type="search" aria-label="Search clothes" placeholder="Search clothes, styles, and more..." />
+        <button type="submit">Search</button>
+      </form>
+      <button class="install-app" id="install-app" type="button" hidden>Install app</button>
+      <a href="#cart" class="cart" aria-label="Open shopping cart">🛍 Cart</a>
+    </header>
+
+    <main>
+      <section class="fashion-hero" id="home">
+        <div class="fashion-hero-copy">
+          <p class="eyebrow">New season · New signatures</p>
+          <h1>Wear your<br />own story.</h1>
+          <p>Everyday essentials, treasured traditions, and feel-good styles for every side of you.</p>
+          <a href="#products" class="shop-btn">Explore the collection <span aria-hidden="true">→</span></a>
+          <div class="hero-note"><span>Women</span><span>Men</span><span>Kids</span><span>And more</span></div>
+        </div>
+        <div class="fashion-hero-image">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85" alt="Friends enjoying a day out in casual fashion" />
+          <span class="hero-sticker">STYLE<br />FOR ALL</span>
+          <span class="hero-image-caption"><span>THE OUR BRAND EDIT</span><strong>Made for your every day.</strong></span>
+        </div>
+      </section>
+
+      <section class="collection-note" aria-label="Explore the OUR BRAND collections">
+        <div><span>01</span><p><strong>Everyday, elevated</strong><small>Easy pieces, personal style.</small></p></div>
+        <div><span>02</span><p><strong>Rooted in tradition</strong><small>Looks to treasure and share.</small></p></div>
+        <div><span>03</span><p><strong>Room to move</strong><small>Comfort for wherever you go.</small></p></div>
+      </section>
+
+      <section class="section department-section" id="departments">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Find your corner of the wardrobe</p>
+            <h2>Style for every side of you</h2>
+            <p class="subtitle">The pieces you need, the looks you love, all in one place.</p>
+          </div>
+        </div>
+        <div class="department-grid">
+          <button class="department-card" type="button" data-filter="women">
+            <span class="department-icon">01</span><span>Women</span><small>Dresses, tops &amp; more</small>
+          </button>
+          <button class="department-card" type="button" data-filter="men">
+            <span class="department-icon">02</span><span>Men</span><small>Shirts, denim &amp; more</small>
+          </button>
+          <button class="department-card" type="button" data-filter="kids">
+            <span class="department-icon">03</span><span>Kids</span><small>Play-ready favorites</small>
+          </button>
+          <button class="department-card" type="button" data-filter="traditional">
+            <span class="department-icon">04</span><span>Traditional</span><small>Kurtas, suits &amp; more</small>
+          </button>
+          <button class="department-card" type="button" data-filter="activewear">
+            <span class="department-icon">05</span><span>Activewear</span><small>Men’s training &amp; running gear</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="section products" id="products">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The OUR BRAND edit</p>
+            <h2>Wear it your way</h2>
+            <p class="subtitle">Explore clothing for every style, season, and occasion.</p>
+          </div>
+          <span class="product-count" id="product-count" aria-live="polite"></span>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter clothes by department">
+          <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All clothes</button>
+          <button class="filter-chip" type="button" data-filter="women" aria-pressed="false">Women</button>
+          <button class="filter-chip" type="button" data-filter="men" aria-pressed="false">Men</button>
+          <button class="filter-chip" type="button" data-filter="kids" aria-pressed="false">Kids</button>
+          <button class="filter-chip" type="button" data-filter="traditional" aria-pressed="false">Traditional</button>
+          <button class="filter-chip" type="button" data-filter="activewear" aria-pressed="false">Men’s Activewear</button>
+        </div>
+        <div class="product-grid clothing-grid" id="all-products">
+          <article class="product-card" data-department="women" data-type="dress">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80" alt="Floral midi dress" />
+            <div class="product-info"><span class="badge">NEW SEASON</span><h3>Floral Midi Dress</h3><p class="product-type">Women's dresses</p><p class="price">Rs. 4,250</p><p class="old-price">Rs. 5,600</p><p class="rating">★★★★★ <span>(42)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Floral Midi Dress"><option value="">Choose size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="men" data-type="shirt">
+            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=700&q=80" alt="Men's casual button-up shirt" />
+            <div class="product-info"><span class="badge">BESTSELLER</span><h3>Everyday Oxford Shirt</h3><p class="product-type">Men's shirts</p><p class="price">Rs. 2,850</p><p class="old-price">Rs. 3,700</p><p class="rating">★★★★★ <span>(68)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Everyday Oxford Shirt"><option value="">Choose size</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="traditional" data-type="kurta">
+            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" alt="Embroidered traditional saree" />
+            <div class="product-info"><span class="badge">TIMELESS</span><h3>Embroidered Saree</h3><p class="product-type">Traditional wear</p><p class="price">Rs. 3,950</p><p class="old-price">Rs. 5,200</p><p class="rating">★★★★★ <span>(35)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Embroidered Saree"><option value="">Choose size</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="women" data-type="top">
+            <img src="images/cotton-blouse.jpg" alt="White cotton sleeveless blouse" />
+            <div class="product-info"><span class="badge">EASY EVERYDAY</span><h3>Soft Cotton Blouse</h3><p class="product-type">Women's tops</p><p class="price">Rs. 2,200</p><p class="old-price">Rs. 2,950</p><p class="rating">★★★★☆ <span>(29)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Soft Cotton Blouse"><option value="">Choose size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="men" data-type="jeans">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80" alt="Classic blue denim jeans" />
+            <div class="product-info"><span class="badge">EVERYDAY FIT</span><h3>Classic Straight Jeans</h3><p class="product-type">Men's denim</p><p class="price">Rs. 3,750</p><p class="old-price">Rs. 4,900</p><p class="rating">★★★★★ <span>(51)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose waist size for Classic Straight Jeans"><option value="">Choose size</option><option>28</option><option>30</option><option>32</option><option>34</option><option>36</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="kids" data-type="kidswear">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=80" alt="Colorful kids' casual clothing" />
+            <div class="product-info"><span class="badge">PLAY FAVORITE</span><h3>Mini Explorer Set</h3><p class="product-type">Kids' two-piece set</p><p class="price">Rs. 2,650</p><p class="old-price">Rs. 3,400</p><p class="rating">★★★★★ <span>(37)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Mini Explorer Set"><option value="">Choose size</option><option>2-3Y</option><option>4-5Y</option><option>6-7Y</option><option>8-9Y</option><option>10-11Y</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="activewear" data-type="activewear">
+            <img src="images/catalog/activewear-men-s-track-suit-set.jpg" alt="Men’s training tracksuit" />
+            <div class="product-info"><span class="badge">MOVE EASY</span><h3>Men’s Track Suit Set</h3><p class="product-type">Tracksuits</p><p class="price">Rs. 1,950</p><p class="old-price">Rs. 2,350</p><p class="rating">★★★★☆ <span>(46)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Men’s Track Suit Set"><option value="">Choose size</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="women" data-type="outerwear">
+            <img src="images/womens-light-jacket.jpg" alt="Women's lightweight jacket" />
+            <div class="product-info"><span class="badge">LAYER UP</span><h3>City Light Jacket</h3><p class="product-type">Women's outerwear</p><p class="price">Rs. 5,250</p><p class="old-price">Rs. 6,800</p><p class="rating">★★★★★ <span>(23)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for City Light Jacket"><option value="">Choose size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="traditional" data-type="shalwar-kameez">
+            <img src="images/festive-saree.jpg" alt="Pink and gold festive saree" />
+            <div class="product-info"><span class="badge">CLASSIC</span><h3>Festive Saree</h3><p class="product-type">Traditional wear</p><p class="price">Rs. 4,450</p><p class="old-price">Rs. 5,750</p><p class="rating">★★★★★ <span>(31)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Festive Saree"><option value="">Choose size</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="men" data-type="hoodie">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80" alt="Men's relaxed fit hoodie" />
+            <div class="product-info"><span class="badge">WEEKEND PICK</span><h3>Relaxed Fleece Hoodie</h3><p class="product-type">Men's sweatshirts</p><p class="price">Rs. 3,350</p><p class="old-price">Rs. 4,300</p><p class="rating">★★★★☆ <span>(28)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Relaxed Fleece Hoodie"><option value="">Choose size</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="women" data-type="skirt">
+            <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=700&q=80" alt="Pleated women's midi skirt" />
+            <div class="product-info"><span class="badge">JUST IN</span><h3>Pleated Midi Skirt</h3><p class="product-type">Women's skirts</p><p class="price">Rs. 3,150</p><p class="old-price">Rs. 4,100</p><p class="rating">★★★★★ <span>(19)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Pleated Midi Skirt"><option value="">Choose size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+          <article class="product-card" data-department="kids" data-type="kidswear">
+            <img src="https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?auto=format&fit=crop&w=700&q=80" alt="Children's colorful everyday outfit" />
+            <div class="product-info"><span class="badge">LITTLE LOOKS</span><h3>Weekend Play Tee</h3><p class="product-type">Kids' tops</p><p class="price">Rs. 1,250</p><p class="old-price">Rs. 1,700</p><p class="rating">★★★★☆ <span>(22)</span></p><label class="size-label">Size<select class="product-size" aria-label="Choose size for Weekend Play Tee"><option value="">Choose size</option><option>2-3Y</option><option>4-5Y</option><option>6-7Y</option><option>8-9Y</option><option>10-11Y</option></select></label><button type="button" class="add-cart">Add to bag</button></div>
+          </article>
+        </div>
+        <p class="no-results" id="no-results" hidden>No clothes matched your search. Try a different style or department.</p>
+        <p class="catalog-summary" id="catalog-summary" aria-live="polite"></p>
+      </section>
+
+      <section class="fashion-promo">
+        <div><p class="eyebrow">Made for real life</p><h2>Comfort you can live in.<br />Style you can call yours.</h2><a href="#products" class="shop-btn">Find your next favorite</a></div>
+        <div class="promo-shapes" aria-hidden="true"><span>OB</span></div>
+      </section>
+
+      <section class="section about" id="about">
+        <h2>Welcome to OUR BRAND</h2>
+        <p>A clothing destination for women, men, and kids, with everyday essentials, traditional outfits, and active styles in one easy-to-use shopping app.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div><a href="#home" class="logo">OUR <span>BRAND</span></a><p>Wear what feels like you.</p></div>
+        <div><h3>Customer Care</h3><a href="help-center.html">Help Center</a><a href="returns.html">Returns</a><a href="shipping.html">Shipping Information</a></div>
+        <div><h3>About OUR BRAND</h3><a href="our-story.html">Our Story</a><a href="sell-on-our-brand.html">Sell on OUR BRAND</a><a href="contact.html">Contact Us</a></div>
+      </div>
+      <div class="copyright">© 2026 OUR BRAND. Fashion for everyone.</div>
+    </footer>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping bag">
+      <div class="cart-drawer-header"><h2>Your bag</h2><button class="close-cart" type="button" aria-label="Close bag">&times;</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><p>Your bag is waiting for a favorite.</p><button class="continue-shopping" type="button">Continue shopping</button></div>
+      <div class="cart-summary" id="cart-summary"><div><span>Subtotal</span><strong id="cart-total">Rs. 0</strong></div><button class="checkout-btn" type="button" id="checkout-btn">Continue to checkout</button></div>
+    </aside>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="catalog.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
